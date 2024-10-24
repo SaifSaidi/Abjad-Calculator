@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <title>حاسبة قيم الآيات</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;  
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-6">
+
+    <div class="container mx-auto bg-white shadow-lg rounded-lg p-5">
+        <h1 class="text-2xl font-bold text-center text-teal-700">حاسبة قيم الآيات</h1>
+        
+        <div class="mt-5">
+            <label for="inputAyat" class="block mb-2 text-lg font-medium text-gray-700">أدخل الآيات:</label>
+            <textarea id="inputAyat" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" placeholder="اكتب الآيات هنا..."></textarea>
+        </div>
+        
+        <button id="calculateBtn" class="mt-4 w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-teal-700 transition duration-300">احسب القيم</button>
+
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-800">النتائج:</h2>
+            <p class="mt-2 text-gray-600">القيمة الأبجدية: <span id="totalValue" class="font-bold text-teal-600">0</span></p>
+            <p class="mt-2 text-gray-600">عدد الحروف: <span id="letterCount" class="font-bold text-teal-600">0</span></p>
+            <p class="mt-2 text-gray-600">الحروف المتكررة: <span id="repeatedLetters" class="font-bold text-teal-600"></span></p>
+        </div>
+    </div>
+
+    <script src="./app.js">
+        </script>
+
+</body>
+</html>
